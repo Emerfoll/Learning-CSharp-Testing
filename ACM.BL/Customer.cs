@@ -1,9 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ACM.BL
 {
     public class Customer
     {
+        public Customer()
+        {
+
+        }
+
+        public Customer(int customerId)
+        {
+            CustomerId = customerId;
+        }
+
         public int CustomerId{ get; private set; }
         public string EmailAddress { get; set; }
 
@@ -39,6 +50,37 @@ namespace ACM.BL
             {
                 _lastName = value;
             }
+        }
+
+        /// <summary>
+        /// Retrieves one customer.
+        /// </summary>
+        public Customer Retrieve(int customerId)
+        {
+            // Code for retrieving defined customer
+
+            return new Customer();
+        }
+
+        /// <summary>
+        /// Retrieves all customer.
+        /// </summary>
+        public List<Customer> Retrieve()
+        {
+            // Code for retrieving defined customer
+
+            return new List<Customer>();
+        }
+
+        /// <summary>
+        /// Saves the current customer
+        /// </summary>
+        /// <returns></returns>
+        public bool Save()
+        {
+            // code that saves defined customer
+
+            return true;
         }
 
         /// <summary>
