@@ -104,5 +104,24 @@ namespace ACM.BLTest
             Assert.AreEqual(expected, actual);
 
         }
+
+        [TestMethod]
+        public void ValidateMissingLastName()
+        {
+            //--Arange
+            var customer = new Customer
+            {
+                EmailAddress = "fbaggins@hobbiton.me"
+            };
+
+            var expected = false;
+
+            //--Act
+            var actual = customer.Validate();
+
+            //--Assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }
