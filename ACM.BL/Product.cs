@@ -17,26 +17,6 @@ namespace ACM.BL
         public int ProductId { get; set; }
         public string ProductName { get; set; }
 
-        /// <summary>
-        /// Retrieve one product.
-        /// </summary>
-        public Product Retrieve(int productId)
-        {
-            // retrieve product code
-
-            return new Product();
-        }
-
-        /// <summary>
-        /// Saves the current product
-        /// </summary>
-        /// <returns></returns>
-        public bool Save()
-        {
-            // code that saves defined product
-
-            return true;
-        }
 
         /// <summary>
         /// Validates the product data.
